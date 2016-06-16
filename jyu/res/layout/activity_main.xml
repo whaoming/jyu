@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#4664a1" >
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:baselineAligned="false"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingTop="3dp" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" >
+
+            <Button
+                android:id="@+id/button_state1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:button="@null"
+                android:drawableTop="@drawable/ic_service_selector"
+                android:gravity="center"
+                android:singleLine="true"
+                android:tag="service"
+                android:text="@string/fragemt_myjyu"
+                android:textColor="@color/text_service_color"
+                android:textSize="13sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" >
+
+            <Button
+                android:id="@+id/button_state2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:button="@null"
+                android:drawableTop="@drawable/ic_message_selector"
+                android:gravity="center"
+                android:singleLine="true"
+                android:tag="message"
+                android:text="@string/fragemt_news"
+                android:textColor="@color/text_service_color"
+                android:textSize="13sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" >
+
+            <Button
+                android:id="@+id/button_state3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:button="@null"
+                android:drawableTop="@drawable/ic_profile_selector"
+                android:gravity="center"
+                android:singleLine="true"
+                android:tag="personal"
+                android:text="@string/fragemt_findout"
+                android:textColor="@color/text_service_color"
+                android:textSize="13sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" >
+
+            <Button
+                android:id="@+id/button_state4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:button="@null"
+                android:drawableTop="@drawable/ic_setting_selector"
+                android:gravity="center"
+                android:singleLine="true"
+                android:tag="settings"
+                android:text="@string/fragemt_setting"
+                android:textColor="@color/text_service_color"
+                android:textSize="13sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

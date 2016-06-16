@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_big"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#10c0c0c0"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/layout_title_bar" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_rl"
+        android:layout_below="@+id/title_bar"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/news_list_line"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@drawable/fragment_findout_selector"
+        android:scrollbars="none"
+        android:smoothScrollbar="false" />
+
+    <RelativeLayout
+        android:id="@+id/rl_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <EditText
+            android:id="@+id/et_comment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="发表你的评论吧" />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="发送" />
+    </RelativeLayout>
+
+</RelativeLayout>

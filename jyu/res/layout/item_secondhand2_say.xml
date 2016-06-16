@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_blue2" >
+
+        <ImageView
+            android:id="@+id/upic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/tou" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/upic"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/uname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:textColor="#40000000"
+                android:id="@+id/udescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户描述"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white" >
+
+        <LinearLayout
+            android:id="@+id/lin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/haha"
+            android:orientation="vertical"
+            android:padding="2dp" >
+
+            <TextView
+                android:id="@+id/tv_tname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/person"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:text="真实姓名:"
+                android:textColor="#000000"
+                 />
+
+            <TextView
+                android:textColor="#000000"
+                android:gravity="center_vertical"
+                android:padding="2dp"
+                android:id="@+id/tv_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact"
+                android:drawableLeft="@drawable/person"
+                android:lines="1"
+                android:text="联系方式：" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

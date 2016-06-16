@@ -1,0 +1,322 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res/com.jyc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_layout_bg" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_lost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/fragment_findout_selector"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/fragment_lost" />
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv1"
+                    android:text="失物中心"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv1"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/iv1"
+                    android:text="丢了东西？捡到东西？点进来把"
+                    android:textColor="#80000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/android_list_idex" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/news_list_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_secondhand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fragment_findout_selector"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/fragment_secondhand" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv2"
+                    android:text="跳蚤市场"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv2"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/iv2"
+                    android:text="我要买!我要卖!"
+                    android:textColor="#80000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/android_list_idex" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/news_list_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_social"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fragment_findout_selector"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/iv3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/fragment_social" />
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv3"
+                    android:text="校园活动"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv3"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/iv3"
+                    android:text="不想宅在宿舍?点点点!"
+                    android:textColor="#80000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/android_list_idex" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_express"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/fragment_findout_selector"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/iv4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/fragment_express" />
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv4"
+                    android:text="快递查询"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv4"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/iv4"
+                    android:text="只需要单号,你就能知道你快递在哪"
+                    android:textColor="#80000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/android_list_idex" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/news_list_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_repair"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fragment_findout_selector"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/iv5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/fragment_repair" />
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv5"
+                    android:text="宿舍保修"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv5"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/iv5"
+                    android:text="宿舍水龙头又坏了？一键保修"
+                    android:textColor="#80000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/android_list_idex" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/news_list_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_library"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fragment_findout_selector"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/iv7"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/fragment_phone" />
+
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv7"
+                    android:text="移动图书馆"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv7"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/iv7"
+                    android:text="直接查询关于图书馆的一切！"
+                    android:textColor="#80000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/android_list_idex" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_phones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/fragment_findout_selector"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/iv6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/fragment_phone" />
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv6"
+                    android:text="校园电话"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv6"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/iv6"
+                    android:text="想找班主任请假,没电话？小问题"
+                    android:textColor="#80000000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/android_list_idex" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

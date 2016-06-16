@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/product_detail_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/upic"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/default_users_avatar" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/uname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true"
+                    android:text="UserName"
+                    android:textColor="#815F3D"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/udescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true"
+                    android:text="description"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iv_red_contact" 
+                android:padding="3dp"/>
+
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="联系方式:634660" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iv_red_contact" 
+                android:padding="3dp"/>
+
+            <TextView
+                android:id="@+id/tname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="真实姓名:王浩明" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

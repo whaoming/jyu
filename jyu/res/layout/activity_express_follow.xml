@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffeef1f3" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/layout_title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/indicate"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_bar" >
+
+        <RelativeLayout
+            android:id="@+id/colorLine"
+            android:layout_width="3dp"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/dot_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/icon_count"
+            android:gravity="center"
+            android:text="起"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/dot_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/icon_success"
+            android:gravity="center"
+            android:textSize="8sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_bar"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="10dp"
+        android:fadingEdge="none"
+        android:listSelector="#00000000"
+        android:paddingRight="5dp" >
+    </ListView>
+
+</RelativeLayout>

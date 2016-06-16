@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_blue1" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/layout_title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/login_mid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingTop="50dp" >
+
+        
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="50dp"
+            android:background="@null"
+            android:drawableBottom="@drawable/line_2"
+            android:drawableLeft="@drawable/person"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="用户账户"
+            android:paddingLeft="10dip" />
+        
+        <EditText
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textView1"
+            android:layout_below="@+id/username"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:drawableBottom="@drawable/line_2"
+            android:drawableLeft="@drawable/person"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="用户密码"
+            android:paddingLeft="10dip" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="嘉大助手"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <RelativeLayout
+            android:id="@+id/login"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/bg_black"
+            android:clickable="true"
+            android:padding="3dp"
+>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="登陆"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" 
+        android:paddingBottom="20dp"
+        android:gravity="center_horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="没有账号?"
+            android:textColor="@color/white" 
+            android:textSize="12sp"
+            
+            />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</RelativeLayout>

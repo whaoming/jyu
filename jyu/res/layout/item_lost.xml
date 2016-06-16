@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="#00000000"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="3dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/upic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/tou" />
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/upic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#00000000"
+            android:orientation="vertical" >
+
+            <TextView
+                
+                android:id="@+id/uname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="username"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_margin="3dp"
+                android:textColor="#80000000"
+                android:id="@+id/udescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="udescription"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="6dp"
+                android:background="#00000000"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="帮帮忙，今天在中区图书馆三楼丢失的一部手机"
+                    android:textColor="#000000" />
+
+                <com.jyu.view.custom.photoutil.MyGridView
+                    android:id="@+id/noScrollgridview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dip"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:verticalSpacing="10dp" >
+                </com.jyu.view.custom.photoutil.MyGridView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:background="#FF7F66"
+                        android:textColor="#ffffff"
+                        android:id="@+id/type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="寻物启事"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:textColor="#80000000"
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/type"
+                        android:layout_marginTop="3dp"
+                        android:text="丢失时间:2015.8.3下午"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_news_comment_num" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_edit"
+            android:layout_margin="4dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pencil" />
+    </RelativeLayout>
+
+</LinearLayout>

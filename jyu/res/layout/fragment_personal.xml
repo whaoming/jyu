@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_layout_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="#4664a1" >
+
+                <Button
+                    android:id="@+id/bt_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/my_personal_click_login"
+                    android:gravity="center"
+                    android:text="@string/personal_login"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/small_text_size"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_haslogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/iv_upic"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="20dp"
+                        android:src="@drawable/tou" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/iv_upic"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/iv_upic"
+                        android:text="UserName"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_name"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_toRightOf="@+id/iv_upic"
+                        android:text="我只是一个管理员"
+                        android:textColor="#50ffffff"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true" >
+
+                    <TextView
+                        android:id="@+id/editinfo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#10000000"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text="资料修改" />
+
+
+                    <TextView
+                        android:id="@+id/logout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#20000000"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text="注销账号" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                style="@style/PersonalCenterText"
+                android:text="my圈子" />
+
+            <LinearLayout style="@style/PersonalMainLayoutStyle" >
+
+                <RelativeLayout
+                    android:id="@+id/socialabout"
+                    style="@style/PersonalNormalStyle" >
+
+                    <ImageView
+                        android:id="@+id/personal_icon_02"
+                        style="@style/PersonalIconStyle"
+                        android:src="@drawable/android_personel_waitpay_order" />
+
+                    <TextView
+                        style="@style/PersonalTextStyle"
+                        android:layout_toRightOf="@id/personal_icon_02"
+                        android:text="活动相关" />
+
+                    <ImageView
+                        style="@style/PersonalRightIconStyle"
+                        android:src="@drawable/android_list_idex" />
+                </RelativeLayout>
+
+                <View style="@style/PersonalLine" />
+
+                <RelativeLayout
+                    android:id="@+id/bt_lost"
+                    style="@style/PersonalNormalStyle" >
+
+                    <ImageView
+                        android:id="@+id/personal_icon_01"
+                        style="@style/PersonalIconStyle"
+                        android:layout_width="36dp"
+                        android:layout_height="38dp"
+                        android:src="@drawable/android_personel_quickly_order" />
+
+                    <TextView
+                        style="@style/PersonalTextStyle"
+                        android:layout_toRightOf="@id/personal_icon_01"
+                        android:text="我的寻物启事" />
+
+                    <ImageView
+                        style="@style/PersonalRightIconStyle"
+                        android:src="@drawable/android_list_idex" />
+                </RelativeLayout>
+
+                <View style="@style/PersonalLine" />
+
+                <RelativeLayout
+                    android:id="@+id/secondhand"
+                    style="@style/PersonalTopStyle" >
+
+                    <ImageView
+                        android:id="@+id/second"
+                        style="@style/PersonalIconStyle"
+                        android:layout_width="36dp"
+                        android:layout_height="38dp"
+                        android:src="@drawable/android_personel_quickly_order" />
+
+                    <TextView
+                        style="@style/PersonalTextStyle"
+                        android:layout_toRightOf="@id/second"
+                        android:text="我的二手货" />
+
+                    <ImageView
+                        style="@style/PersonalRightIconStyle"
+                        android:src="@drawable/android_list_idex" />
+                </RelativeLayout>
+
+                <View style="@style/PersonalLine" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/PersonalCenterText"
+                android:text="调试相关" />
+
+            <LinearLayout style="@style/PersonalMainLayoutStyle" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_setip"
+                     style="@style/PersonalTopStyle" >
+
+                    <ImageView
+                        android:id="@+id/personal_icon_04"
+                        style="@style/PersonalIconStyle"
+                        android:src="@drawable/android_my_jd_collects" />
+
+                    <TextView
+                        style="@style/PersonalTextStyle"
+                        android:layout_toRightOf="@id/personal_icon_04"
+                        android:text="动态设置服务器地址" />
+
+                    <ImageView
+                        style="@style/PersonalRightIconStyle"
+                        android:src="@drawable/android_list_idex" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/layout_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="#EAECEB"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EAECEB"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:padding="2dp" >
+
+                <ImageView
+                    android:contentDescription="qe"
+                    android:id="@+id/upic"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/tou" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_uname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="username"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_udescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="udescription"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#00000000"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="帮帮忙，今天在中区图书馆三楼丢失的一部手机"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <com.jyu.view.custom.photoutil.MyGridView
+                            android:id="@+id/noScrollgridview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dip"
+                            android:horizontalSpacing="10dp"
+                            android:numColumns="3"
+                            android:scrollbars="none"
+                            android:verticalSpacing="10dp" >
+                        </com.jyu.view.custom.photoutil.MyGridView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/product_detail_bg"
+                android:orientation="vertical"
+                android:padding="8dip" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/product_text_style"
+                        android:text="物品详细信息"
+                        android:textColor="#333" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="0dip"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/android_list_idex" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginTop="8dip"
+                    android:background="@drawable/news_list_line" />
+
+                <TextView
+                    android:textColor="#80000000"
+                    android:id="@+id/tv_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="遗失地点:南区饭堂"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:textColor="#80000000"
+                    android:id="@+id/tv_ltime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="丢失时间:2015.3.5下午"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:textColor="#80000000"
+                    android:id="@+id/tv_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="物品种类:钱包"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:textColor="#80000000"
+                    android:id="@+id/tv_ilabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="物品标签:钱包"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:textColor="#80000000"
+                    android:id="@+id/tv_llabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="地点标签:南区"
+                    android:textSize="16sp" />
+
+                
+                <TextView
+                    android:textColor="#80000000"
+                    android:id="@+id/tv_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="联系方式:634660(王浩明)"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:textColor="#80000000"
+                    android:id="@+id/tv_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:lines="5"
+                    android:text="物品详细描述:"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#DEE0DF" />
+
+</LinearLayout>

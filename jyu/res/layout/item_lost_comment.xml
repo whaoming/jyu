@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_big"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2dp"
+    android:background="#ffffff"
+    android:padding="2dp" >
+
+    <ImageView
+        android:id="@+id/upic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="3dp"
+        android:src="@drawable/tou" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/upic"
+        android:layout_marginRight="3dp"
+        android:background="#00000000"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/uname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="username"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/udescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="udescription"
+                android:textColor="#80000000"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="帮帮忙，今天在中区图书馆三楼丢失的一部手机"
+                android:textColor="#000000" />
+
+
+                <TextView
+                    android:textSize="15sp"
+                    android:padding="4dp"
+                    android:background="#CDECF3"
+                    android:id="@+id/tv_reply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="回复@夏天的评论：上你妹美俄爱胡思的还是速度速度速度"
+                    android:textColor="#80000000"
+                     />
+                
+                <TextView 
+                    android:id="@+id/tv_chat"
+                    android:layout_margin="5dp"
+                    android:textColor="#5EA5DC"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="查看对话"
+                    />
+    </LinearLayout>
+
+</RelativeLayout>

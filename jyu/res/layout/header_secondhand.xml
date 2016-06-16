@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:layout_marginBottom="10dp"
+    android:clickable="false"
+    android:paddingBottom="5dp"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+     >
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/iv_pic"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/secondhand" />
+        <RelativeLayout
+             android:clickable="false"
+             android:layout_below="@+id/iv_pic"
+              android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+             >
+        <TextView
+            android:textColor="#80000000"
+            android:textSize="12sp"
+            android:drawablePadding="2dp"
+            android:gravity="left|bottom"
+            android:drawableLeft="@drawable/packge_color"
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="提供一个嘉大二手货交易的平台"
+             />
+        <TextView
+            android:textColor="#80000000"
+             android:clickable="false"
+             android:drawablePadding="2dp"
+            android:textSize="12sp"
+            android:layout_marginTop="6dp"
+            android:gravity="left|bottom"
+            android:drawableLeft="@drawable/pencil"
+            android:id="@+id/tv_problem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_description"
+            android:text="对此平台有建议？"
+             />
+        <TextView
+            android:textSize="10sp"
+            android:textColor="@color/blue"
+            android:id="@+id/tv_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击这里"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/tv_problem"
+             />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

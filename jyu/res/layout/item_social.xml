@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+     >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+            <ImageView
+                android:background="#ffffff"
+                android:id="@+id/iv_pic"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/myjpg1" />
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                 android:background="#20000000"
+                 android:text="12/50"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentTop="true"
+                 />
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_pic"
+                android:background="#40000000"
+                android:padding="5dp"
+                android:text="嘉星荧光夜跑活动"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:background="@drawable/social_background_corners"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_top"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <RelativeLayout
+                android:id="@+id/bt_join"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="2.5"
+                android:background="@drawable/btn_pink"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/tv_join"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="Join"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+
+            
+
+            <ImageView
+                android:id="@+id/iv_like"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:src="@drawable/blue_heart" />
+            
+            <ImageView
+                android:id="@+id/iv_des"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:src="@drawable/mouse_color" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

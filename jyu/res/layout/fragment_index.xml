@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_layout_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/myviewpage"
+        layout="@layout/layout_roll_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:padding="3dp" >
+
+        <TextView
+             android:background="@drawable/fragment_findout_selector"
+            android:id="@+id/tv_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:drawableLeft="@drawable/laba_blue"
+            android:drawablePadding="2dp"
+            android:text="校园公告"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/news_list_line" />
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:background="@drawable/fragment_findout_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:drawableLeft="@drawable/laba_blue"
+            android:drawablePadding="2dp"
+            android:gravity="center_vertical"
+            android:text="校园公告"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/news_list_line" />
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:drawableLeft="@drawable/laba_blue"
+            android:drawablePadding="2dp"
+            android:gravity="center_vertical"
+            android:text="校园公告"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="快捷入口"
+        android:textColor="#80000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp" >
+
+            <ImageView
+                android:id="@+id/iv_guanwang"
+                android:contentDescription="qqqq"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/jyu" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#40000000"
+                android:gravity="center_horizontal"
+                android:text="嘉大官网"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+        </RelativeLayout>
+        <RelativeLayout
+             android:layout_margin="10dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp" >
+
+            <ImageView
+                android:id="@+id/iv_zhengfang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/jiaowuchu" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#40000000"
+                android:gravity="center_horizontal"
+                android:text="正方系统"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+        </RelativeLayout>
+        <RelativeLayout
+             android:layout_margin="10dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp" >
+
+            <ImageView
+                android:id="@+id/iv_chengji"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/chengji" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#40000000"
+                android:gravity="center_horizontal"
+                android:text="成绩查询"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

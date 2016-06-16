@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:background="@drawable/product_detail_bg"
+        android:orientation="vertical"
+        android:paddingBottom="6dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:text="标题标题"
+                android:textColor="#3299CC"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/more"
+                style="@style/PersonalRightIconStyle"
+                android:src="@drawable/android_list_idex" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/news_list_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/pic"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/home_scroll_default" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="发起者:嘉星工作室"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="活动地点:嘉大校园"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="活动时间:2015.3.8-2015.4.9"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/contact"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="联系人:634422"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/number"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="已报名人数:40"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_join"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_blue"
+            android:text="查看已报名的人"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

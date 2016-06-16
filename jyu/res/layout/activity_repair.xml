@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/layout_title_bar" />
+
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/bg_share_content"
+        android:gravity="left|top"
+        android:hint="小明(634660)"
+        android:inputType="textMultiLine"
+        android:minLines="1"
+        android:padding="7dp"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/dorm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/bg_share_content"
+        android:ems="10"
+        android:gravity="left|top"
+        android:hint="宿舍地址"
+        android:inputType="textMultiLine"
+        android:minLines="1"
+        android:padding="7dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/bg_share_content"
+        android:gravity="left|top"
+        android:hint="详情描述"
+        android:inputType="textMultiLine"
+        android:minLines="10"
+        android:padding="7dp"
+        android:singleLine="true" />
+
+</LinearLayout>

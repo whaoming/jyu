@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#10c0c0c0"
+     >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/layout_title_bar" />
+
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+         >
+        <!-- listview 
+        <view
+            
+            android:id="@+id/lv_item_news"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.jyc.ui.pullrefreshview.PullToRefreshListView"
+            android:cacheColorHint="@android:color/white"
+            android:divider="@drawable/news_list_line"
+            android:fadingEdge="none"
+            android:scrollbars="none" />-->
+             <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/pull_refresh_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+           android:divider="@drawable/news_list_line"
+           android:listSelector="@drawable/fragment_findout_selector"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:scrollbars="none"
+            android:smoothScrollbar="false" />
+
+        
+           <include
+            android:id="@+id/loading_view"
+            layout="@layout/layout_loading" /> 
+            
+           
+            <TextView
+                android:background="#00000000"
+                android:gravity="center"
+                android:id="@+id/nodata"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textColor="#90000000"
+                android:textSize="25sp"
+                android:visibility="gone" />
+        
+    </FrameLayout>
+
+</LinearLayout>

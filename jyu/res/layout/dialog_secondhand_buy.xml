@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:minWidth="280dip"
+    android:layout_height="220dp"
+    android:id="@+id/rl_main"
+    android:background="#E8E8E8" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F5F6FA"
+             >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/iv_upic"
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="username"
+                android:textColor="#B0B1B5" />
+            
+
+            <ImageView
+                android:layout_marginLeft="8dp"
+                android:id="@+id/iv_upic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+               android:layout_marginTop="8dp"
+               android:layout_marginBottom="8dp"
+                android:src="@drawable/tou" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/news_list_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <EditText
+                android:id="@+id/et_tname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableBottom="@drawable/line_2"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="真实姓名"
+                android:paddingLeft="10dip" />
+
+            <EditText
+                android:id="@+id/et_snum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@null"
+                android:drawableBottom="@drawable/line_2"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="短号"
+                android:paddingLeft="10dip" />
+            <TextView 
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="8dp"
+                android:text="留下真实姓名和短号.方便组织活动的人联系你"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <RelativeLayout
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                
+                android:background="@drawable/btn_pink"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/ok_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="确认"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

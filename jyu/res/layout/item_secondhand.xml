@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+   android:paddingLeft="2dp"
+   android:paddingRight="2dp"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:background="@drawable/fragment_findout_selector"
+        android:padding="6dp" >
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="110dp"
+            android:layout_height="90dp"
+            android:background="#80000000"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/pic"
+            android:lines="2"
+            android:maxLines="2"
+            android:text="出售二手单车一部"
+            android:textColor="#80000000"
+            android:textSize="16sp" />
+
+        <TextView
+                 android:textColor="#80000000"
+            android:id="@+id/tv_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/pic"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/pic"
+            android:gravity="bottom"
+            android:text="2012.8.5 3:22" />
+
+        <TextView
+            android:clickable="false"
+            android:id="@+id/tv_label"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_data"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/pic"
+            android:text="自行车" 
+            android:background="#7Ac17b"
+            android:textColor="#ffffff"
+            />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_data"
+            android:layout_alignParentRight="true"
+            android:gravity="right|bottom"
+            android:text="$22"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

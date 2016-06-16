@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="true"  android:drawable="@drawable/fangkuai_color"/>
+    <item android:drawable="@drawable/fangkuai_nocolor"/>
+</selector>

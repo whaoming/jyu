@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jyu"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tubiao"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.White.NoTitleBar" android:logo="@drawable/tubiao">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jyu.view.activity.ExpressActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyu.view.activity.ExpressFollowInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyu.view.activity.SecondHandPlayerListAcvitity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyu.view.activity.FrameActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyu.view.activity.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyu.view.activity.LostActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyu.view.activity.LostFoundDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.jyu.view.activity.LostFoundDetailActivity2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyu.view.activity.LostItemPublishActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyu.view.activity.MySecondHandActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyu.view.activity.MySocialAboutActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyu.view.activity.NewsDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyu.view.activity.PhoneActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyu.view.activity.PhotoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyu.view.activity.RegisterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyu.view.activity.RepairActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyu.view.activity.SecondHandActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyu.view.activity.SecondHandDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyu.view.activity.SecondHandPlayerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyu.view.activity.SecondHandPublishActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyu.view.activity.SocialActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyu.view.activity.SocialDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyu.view.activity.SocialPublishActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyu.view.activity.SocialUserListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyu.view.activity.StartActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyu.view.activity.UserInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jyu.view.activity.MySecondHandAboutActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>
